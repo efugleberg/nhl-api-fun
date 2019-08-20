@@ -5,8 +5,8 @@ const TeamsArray = props => {
     console.log('props', props)
   return (
     <div className="teamsArray">
-      {props.teams.map(item => (
-        <TeamProperty key={item.id} item={item} />
+      {props.teams.map(team => (
+        <TeamProperty key={team.id} city={team} />
       ))}
     </div>
   );

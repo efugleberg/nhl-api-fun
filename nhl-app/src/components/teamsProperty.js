@@ -4,10 +4,10 @@ import React from "react";
 const TeamProperty = props => {
   return (
     <div className="teams">
-      <h3 className="name"> City: {props.item.locationName}</h3>
-      <p>Team Name: {props.item.teamName}</p>
-      <p>Venue: {props.item.venue.name}</p>
-      {/* <p>Link {props.item.officialSiteUrl}</p> */}
+      <h3 className="name"> City: {props.city.locationName}</h3>
+      <p>Team Name: {props.city.teamName}</p>
+      <p>Venue: {props.city.venue.name}</p>
+      {/* <p>Link {props.city.officialSiteUrl}</p> */}
     </div>
   );
 };

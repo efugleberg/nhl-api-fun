@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-import TeamsArray from './components/teamsArray';
+import TeamsArray from "./components/teamsArray";
 
 class App extends Component {
   constructor() {
@@ -12,13 +12,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getTeams('https://statsapi.web.nhl.com/api/v1/teams/');
+    this.getTeams("https://statsapi.web.nhl.com/api/v1/teams/");
   }
 
   getTeams = URL => {
-    // feel free to research what this code is doing.
-    // At a high level we are calling an API to fetch some starwars data from the open web.
-    // We then take that data and resolve it our state.
     fetch(URL)
       .then(res => {
         return res.json();
