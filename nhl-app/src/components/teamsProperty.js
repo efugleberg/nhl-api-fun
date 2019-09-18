@@ -6,7 +6,10 @@ const TeamProperty = props => {
     <div className="teams">
       <h3 className="name"> City: {props.city.locationName}</h3>
       <p>Team Name: {props.city.teamName}</p>
-      <p>Venue: {props.city.venue.name}</p>
+      <p>
+        Venue: {props.city.venue.name} in {props.city.venue.city}
+      </p>
+
       {/* <p>Link {props.city.officialSiteUrl}</p> */}
     </div>
   );
